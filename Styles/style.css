@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: bolder;
+  color: #352641;
 }
 body {
-  font-family: "Montserrat", sans-serif;
   background-image: url(/Img/no_logo.jpg);
   background-attachment: fixed;
   display: flex;
@@ -36,14 +41,16 @@ body {
   z-index: -1;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.2);
-  filter: blur(10px);
+  filter: blur(20px);
   background: inherit;
 }
 
 h1 {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Fredoka One", cursive;
   font-size: 56px;
   margin-bottom: 12px;
+  color: #ddb086;
+  text-align: center;
 }
 input {
   border: none;
@@ -51,7 +58,7 @@ input {
   width: 100%;
   border-bottom: 2px solid rgba(55, 55, 55, 0.5);
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.9);
+  color: #352641;
   font-size: 1rem;
   padding: 8px;
 }
@@ -60,16 +67,31 @@ input:focus {
 }
 h2 {
   margin-top: 20px;
+  font-size: 28px;
+  font-family: "Fredoka One", cursive;
 }
 .clickable {
   cursor: pointer;
 }
-.deleteButton {
+.deleteButon {
   color: rgba(17, 17, 17, 0.5);
   border: none;
-  background-color: salmon;
+  background: transparent;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 2px;
+  margin-right: 6px;
+  font-weight: bolder;
 }
 ul,
 li {
   list-style-type: none;
+}
+#tasks {
+  padding: 20px 0;
+}
+li {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
 }
